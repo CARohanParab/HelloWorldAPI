@@ -18,7 +18,7 @@ WORKDIR /app
 COPY --from=build /app/out ./
 
 # Expose the port on which the app will run
-EXPOSE 80
+EXPOSE 2301
 
 # Start the application
 ENTRYPOINT ["dotnet", "HelloWorldAPI.dll"]
